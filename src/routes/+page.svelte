@@ -7,6 +7,7 @@
 	import FAQAccordion from '$lib/components/FAQAccordion.svelte';
 	import ContactForm from '$lib/components/ContactForm.svelte';
 	import { vehicleAreas, injuryAreas } from '$lib/data/practice-areas';
+	import { Scale, DollarSign, Phone, GraduationCap, Clock, MapPin } from 'lucide-svelte';
 
 	const featuredAreas = [
 		...vehicleAreas.slice(0, 5),
@@ -70,7 +71,7 @@
 <section class="stats-bar">
 	<div class="container stats-grid">
 		<div class="stat-item">
-			<div class="stat-icon">⚖️</div>
+			<div class="stat-icon"><Scale size={40} strokeWidth={1.5} color="#C99700" /></div>
 			<div class="stat-content">
 				<strong>No Fees Unless You Win</strong>
 				<p>Zero upfront cost — ever</p>
@@ -78,7 +79,7 @@
 		</div>
 		<div class="stat-divider"></div>
 		<div class="stat-item">
-			<div class="stat-icon">💰</div>
+			<div class="stat-icon"><DollarSign size={40} strokeWidth={1.5} color="#C99700" /></div>
 			<div class="stat-content">
 				<strong>Millions Won For Victims</strong>
 				<p>Maximum compensation, always</p>
@@ -86,7 +87,7 @@
 		</div>
 		<div class="stat-divider"></div>
 		<div class="stat-item">
-			<div class="stat-icon">📞</div>
+			<div class="stat-icon"><Phone size={40} strokeWidth={1.5} color="#C99700" /></div>
 			<div class="stat-content">
 				<strong>Free Consultation 24/7</strong>
 				<p>We're here when you need us</p>
@@ -114,18 +115,18 @@
 	<div class="container bio-grid">
 		<div class="bio-image-col">
 			<div class="bio-image-placeholder">
-				<div class="attorney-icon">⚖️</div>
+				<div class="attorney-monogram">MG</div>
 				<p class="attorney-name">Mark Grover</p>
 				<p class="attorney-title">Personal Injury Attorney</p>
 				<p class="attorney-location">Kansas City, Missouri</p>
 			</div>
 			<div class="bio-credentials">
 				<div class="credential">
-					<span class="cred-icon">🎓</span>
+					<span class="cred-icon"><GraduationCap size={20} strokeWidth={1.5} color="#C99700" /></span>
 					<span>Licensed in Missouri & Kansas</span>
 				</div>
 				<div class="credential">
-					<span class="cred-icon">⏱️</span>
+					<span class="cred-icon"><Clock size={20} strokeWidth={1.5} color="#C99700" /></span>
 					<span>20+ Years of Experience</span>
 				</div>
 				<div class="credential">
@@ -220,28 +221,28 @@
 			</p>
 			<div class="contact-info">
 				<div class="info-item">
-					<span class="info-icon">📞</span>
+					<span class="info-icon"><Phone size={20} strokeWidth={1.5} color="#C99700" /></span>
 					<div>
 						<p class="info-label">Kansas City</p>
 						<a href="tel:8165333969" class="info-value">(816) 533-3969</a>
 					</div>
 				</div>
 				<div class="info-item">
-					<span class="info-icon">📞</span>
+					<span class="info-icon"><Phone size={20} strokeWidth={1.5} color="#C99700" /></span>
 					<div>
 						<p class="info-label">Overland Park</p>
 						<a href="tel:9134321000" class="info-value">(913) 432-1000</a>
 					</div>
 				</div>
 				<div class="info-item">
-					<span class="info-icon">📍</span>
+					<span class="info-icon"><MapPin size={20} strokeWidth={1.5} color="#C99700" /></span>
 					<div>
 						<p class="info-label">Office</p>
 						<p class="info-value">7221 W 79th St, Ste 100<br />Overland Park, KS 66204</p>
 					</div>
 				</div>
 				<div class="info-item">
-					<span class="info-icon">⏰</span>
+					<span class="info-icon"><Clock size={20} strokeWidth={1.5} color="#C99700" /></span>
 					<div>
 						<p class="info-label">Availability</p>
 						<p class="info-value">24 Hours / 7 Days a Week</p>
@@ -278,7 +279,8 @@
 	}
 
 	.stat-icon {
-		font-size: 1.8rem;
+		display: flex;
+		align-items: center;
 	}
 
 	.stat-content strong {
@@ -353,11 +355,28 @@
 		padding: 3rem 2rem;
 		text-align: center;
 		border: 2px solid rgba(201, 151, 0, 0.2);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
 	}
 
-	.attorney-icon {
-		font-size: 4rem;
-		margin-bottom: 1rem;
+	.attorney-monogram {
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		background: var(--navy-dark, #0b1a32);
+		border: 3px solid var(--gold, #C99700);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Cinzel', serif;
+		font-size: 64px;
+		font-weight: 600;
+		color: var(--gold, #C99700);
+		letter-spacing: 2px;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+		margin-bottom: 0.5rem;
 	}
 
 	.attorney-name {
@@ -395,7 +414,9 @@
 	}
 
 	.cred-icon {
-		font-size: 1rem;
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
 	}
 
 	.bio-eyebrow {
@@ -529,9 +550,10 @@
 	}
 
 	.info-icon {
-		font-size: 1.3rem;
+		display: flex;
+		align-items: flex-start;
 		flex-shrink: 0;
-		margin-top: 0.1rem;
+		margin-top: 0.15rem;
 	}
 
 	.info-label {

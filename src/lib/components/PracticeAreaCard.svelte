@@ -1,16 +1,21 @@
 <script lang="ts">
+	import { Scale } from 'lucide-svelte';
+
 	interface Props {
 		title: string;
 		slug: string;
 		description: string;
-		icon?: string;
+		icon?: unknown;
 	}
 
-	let { title, slug, description, icon = '⚖️' }: Props = $props();
+	let { title, slug, description, icon = Scale }: Props = $props();
+	const Icon = $derived(icon as typeof Scale);
 </script>
 
 <a href="/{slug}" class="practice-card">
-	<div class="card-icon">{icon}</div>
+	<div class="card-icon">
+		<Icon size={40} strokeWidth={1.5} color="#C99700" />
+	</div>
 	<h3 class="card-title">{title}</h3>
 	<p class="card-description">{description}</p>
 	<span class="card-link">
@@ -58,8 +63,9 @@
 	}
 
 	.card-icon {
-		font-size: 2.2rem;
 		margin-bottom: 1rem;
+		display: flex;
+		align-items: center;
 	}
 
 	.card-title {

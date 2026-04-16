@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { Check, Shield } from 'lucide-svelte';
+
 	let name = $state('');
 	let email = $state('');
 	let phone = $state('');
@@ -44,7 +46,9 @@
 <div class="contact-form-wrap">
 	{#if status === 'success'}
 		<div class="success-msg">
-			<div class="success-icon">✓</div>
+			<div class="success-icon">
+				<Check size={32} strokeWidth={2} color="#0f5132" />
+			</div>
 			<h3>Message Received!</h3>
 			<p>Thank you for contacting GroverLawKC. We will reach out within 24 hours. For urgent matters, call us at <a href="tel:8165333969">(816) 533-3969</a>.</p>
 		</div>
@@ -111,7 +115,8 @@
 			</button>
 
 			<p class="form-note">
-				⚖️ <strong>No fee unless we win.</strong> Your information is 100% confidential.
+				<span class="form-note-icon"><Shield size={16} strokeWidth={1.5} color="#C99700" /></span>
+				<strong>No fee unless we win.</strong> Your information is 100% confidential.
 			</p>
 		</form>
 	{/if}
@@ -209,10 +214,20 @@
 	}
 
 	.form-note {
+		display: flex;
+		align-items: center;
+		gap: 0.4rem;
 		font-size: 0.8rem;
 		color: var(--gray);
 		text-align: center;
 		line-height: 1.5;
+		justify-content: center;
+	}
+
+	.form-note-icon {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
 	}
 
 	.error-msg {
@@ -234,8 +249,6 @@
 		height: 60px;
 		border-radius: 50%;
 		background: #d1e7dd;
-		color: #0f5132;
-		font-size: 1.8rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;

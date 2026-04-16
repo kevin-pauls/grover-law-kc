@@ -1,3 +1,36 @@
+import {
+	Car,
+	Truck,
+	Bike,
+	PersonStanding,
+	Ship,
+	Bus,
+	TrainFront,
+	Beer,
+	TriangleAlert,
+	Snowflake,
+	Scale,
+	Home,
+	Stethoscope,
+	Heart,
+	Brain,
+	Bone,
+	Siren,
+	Flame,
+	Accessibility,
+	Users,
+	Shield,
+	Baby,
+	Dog,
+	ShieldCheck,
+	HardHat,
+	Factory,
+	ClipboardList,
+	FileText,
+	Ban
+} from 'lucide-svelte';
+import type { ComponentType } from 'svelte';
+
 export interface PracticeAreaSection {
 	heading: string;
 	body: string;
@@ -8,7 +41,7 @@ export interface PracticeArea {
 	title: string;
 	menuTitle: string;
 	category: 'vehicle' | 'injury' | 'insurance';
-	icon: string;
+	icon: ComponentType;
 	metaDescription: string;
 	intro: string;
 	sections: PracticeAreaSection[];
@@ -24,7 +57,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Car Accidents',
 		title: 'Kansas City Car Accident Lawyer',
 		category: 'vehicle',
-		icon: '🚗',
+		icon: Car,
 		metaDescription:
 			'Injured in a car accident in Kansas City or Overland Park? GroverLawKC fights for maximum compensation. Free consultation — call (816) 533-3969.',
 		intro:
@@ -50,7 +83,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Truck Accidents',
 		title: 'Kansas City Truck Accident Lawyer',
 		category: 'vehicle',
-		icon: '🚛',
+		icon: Truck,
 		metaDescription:
 			'Seriously injured in a truck or 18-wheeler accident near Kansas City? GroverLawKC handles complex trucking cases. No fee unless we win. Call (816) 533-3969.',
 		intro:
@@ -76,7 +109,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Motorcycle Accidents',
 		title: 'Kansas City Motorcycle Accident Lawyer',
 		category: 'vehicle',
-		icon: '🏍️',
+		icon: Bike,
 		metaDescription:
 			'Hurt in a motorcycle accident in Kansas City? GroverLawKC defends riders against biased insurers. Free consultation — call (816) 533-3969.',
 		intro:
@@ -102,7 +135,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Bicycle Accidents',
 		title: 'Kansas City Bicycle Accident Lawyer',
 		category: 'vehicle',
-		icon: '🚲',
+		icon: Bike,
 		metaDescription:
 			`Injured in a bicycle accident in Kansas City or Overland Park? GroverLawKC fights for cyclists' rights. Free consultation — call (816) 533-3969.`,
 		intro:
@@ -128,7 +161,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Pedestrian Accidents',
 		title: 'Kansas City Pedestrian Accident Lawyer',
 		category: 'vehicle',
-		icon: '🚶',
+		icon: PersonStanding,
 		metaDescription:
 			'Hit by a car as a pedestrian in Kansas City? GroverLawKC fights for maximum compensation. No fees unless we win. Call (816) 533-3969.',
 		intro:
@@ -154,7 +187,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Rideshare Accidents',
 		title: 'Kansas City Rideshare Accident Lawyer',
 		category: 'vehicle',
-		icon: '🚕',
+		icon: Car,
 		metaDescription:
 			'Injured in an Uber or Lyft accident in Kansas City? GroverLawKC handles complex rideshare claims. Free consultation — call (816) 533-3969.',
 		intro:
@@ -180,7 +213,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Boating Accidents',
 		title: 'Kansas City Boating Accident Lawyer',
 		category: 'vehicle',
-		icon: '⛵',
+		icon: Ship,
 		metaDescription:
 			'Hurt in a boating accident near Kansas City? GroverLawKC handles watercraft injury claims. Free consultation — call (816) 533-3969.',
 		intro:
@@ -206,7 +239,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Bus Accidents',
 		title: 'Kansas City Bus Accident Lawyer',
 		category: 'vehicle',
-		icon: '🚌',
+		icon: Bus,
 		metaDescription:
 			'Injured in a bus accident in Kansas City? GroverLawKC fights for bus accident victims. Free consultation — call (816) 533-3969.',
 		intro:
@@ -232,7 +265,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Train Accidents',
 		title: 'Kansas City Train Accident Lawyer',
 		category: 'vehicle',
-		icon: '🚂',
+		icon: TrainFront,
 		metaDescription:
 			'Injured in a train accident in Kansas City? GroverLawKC handles complex rail injury claims. Call (816) 533-3969 for a free consultation.',
 		intro:
@@ -258,7 +291,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Scooter Accidents',
 		title: 'Kansas City Scooter Accident Lawyer',
 		category: 'vehicle',
-		icon: '🛵',
+		icon: Bike,
 		metaDescription:
 			'Hurt in a scooter or e-scooter accident in Kansas City? GroverLawKC is here to help. Free consultation — call (816) 533-3969.',
 		intro:
@@ -284,7 +317,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Golf Cart Accidents',
 		title: 'Golf Cart Accident Lawyer — Kansas City',
 		category: 'vehicle',
-		icon: '⛳',
+		icon: Car,
 		metaDescription:
 			'Injured in a golf cart accident in Kansas City or Overland Park? GroverLawKC fights for your rights. Call (816) 533-3969.',
 		intro:
@@ -310,7 +343,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Drunk Driving Accidents',
 		title: 'Kansas City Drunk Driving Accident Lawyer',
 		category: 'vehicle',
-		icon: '🍺',
+		icon: Beer,
 		metaDescription:
 			'Hit by a drunk driver in Kansas City? GroverLawKC pursues maximum compensation including punitive damages. Call (816) 533-3969 — free consultation.',
 		intro:
@@ -336,7 +369,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Hit and Run Accidents',
 		title: 'Kansas City Hit and Run Accident Lawyer',
 		category: 'vehicle',
-		icon: '🏃',
+		icon: TriangleAlert,
 		metaDescription:
 			'Victim of a hit and run accident in Kansas City? GroverLawKC helps identify your options for compensation. Free consultation — call (816) 533-3969.',
 		intro:
@@ -362,7 +395,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Winter Driving Accidents',
 		title: 'Winter Weather Car Accident Lawyer — Kansas City',
 		category: 'vehicle',
-		icon: '❄️',
+		icon: Snowflake,
 		metaDescription:
 			'Injured in a winter weather car accident in Kansas City? GroverLawKC proves driver negligence in ice and snow crashes. Call (816) 533-3969.',
 		intro:
@@ -392,7 +425,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Personal Injury',
 		title: 'Kansas City Personal Injury Lawyer',
 		category: 'injury',
-		icon: '⚖️',
+		icon: Scale,
 		metaDescription:
 			'Injured due to someone else\'s negligence in Kansas City? GroverLawKC fights for maximum compensation. Free consultation — call (816) 533-3969.',
 		intro:
@@ -418,7 +451,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Slip and Fall',
 		title: 'Kansas City Slip and Fall Lawyer',
 		category: 'injury',
-		icon: '⚠️',
+		icon: TriangleAlert,
 		metaDescription:
 			'Injured in a slip and fall accident in Kansas City? GroverLawKC holds negligent property owners accountable. Free consultation — call (816) 533-3969.',
 		intro:
@@ -444,7 +477,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Premises Liability',
 		title: 'Kansas City Premises Liability Lawyer',
 		category: 'injury',
-		icon: '🏠',
+		icon: Home,
 		metaDescription:
 			'Injured on someone else\'s property in Kansas City? GroverLawKC holds negligent property owners accountable. Free consultation — call (816) 533-3969.',
 		intro:
@@ -470,7 +503,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Medical Malpractice',
 		title: 'Kansas City Medical Malpractice Lawyer',
 		category: 'injury',
-		icon: '🏥',
+		icon: Stethoscope,
 		metaDescription:
 			'Harmed by a doctor or hospital in Kansas City? GroverLawKC handles complex medical malpractice claims. Free consultation — call (816) 533-3969.',
 		intro:
@@ -496,7 +529,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Wrongful Death',
 		title: 'Kansas City Wrongful Death Lawyer',
 		category: 'injury',
-		icon: '🕊️',
+		icon: Heart,
 		metaDescription:
 			'Lost a loved one due to someone\'s negligence in Kansas City? GroverLawKC handles wrongful death claims with compassion. Call (816) 533-3969.',
 		intro:
@@ -522,7 +555,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Brain Injury',
 		title: 'Kansas City Traumatic Brain Injury Lawyer',
 		category: 'injury',
-		icon: '🧠',
+		icon: Brain,
 		metaDescription:
 			'Suffered a traumatic brain injury in Kansas City? GroverLawKC fights for TBI victims and their families. Free consultation — call (816) 533-3969.',
 		intro:
@@ -548,7 +581,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Spinal Cord Injury',
 		title: 'Kansas City Spinal Cord Injury Lawyer',
 		category: 'injury',
-		icon: '🦴',
+		icon: Bone,
 		metaDescription:
 			'Spinal cord injury from an accident in Kansas City? GroverLawKC fights for maximum compensation for paralysis and spinal injuries. Call (816) 533-3969.',
 		intro:
@@ -574,7 +607,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Catastrophic Injury',
 		title: 'Kansas City Catastrophic Injury Lawyer',
 		category: 'injury',
-		icon: '🚨',
+		icon: Siren,
 		metaDescription:
 			'Suffered a catastrophic injury in Kansas City? GroverLawKC pursues life-changing compensation for the most serious injuries. Call (816) 533-3969.',
 		intro:
@@ -600,7 +633,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Burn Injuries',
 		title: 'Kansas City Burn Injury Lawyer',
 		category: 'injury',
-		icon: '🔥',
+		icon: Flame,
 		metaDescription:
 			'Suffered serious burn injuries in Kansas City? GroverLawKC fights for burn victims\' rights. Free consultation — call (816) 533-3969.',
 		intro:
@@ -626,7 +659,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Broken Bones',
 		title: 'Kansas City Broken Bone Injury Lawyer',
 		category: 'injury',
-		icon: '🦷',
+		icon: Bone,
 		metaDescription:
 			'Suffered broken bones in an accident in Kansas City? GroverLawKC fights for fair compensation. Free consultation — call (816) 533-3969.',
 		intro:
@@ -652,7 +685,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Herniated Disc',
 		title: 'Kansas City Herniated Disc Injury Lawyer',
 		category: 'injury',
-		icon: '🔵',
+		icon: Bone,
 		metaDescription:
 			'Herniated disc from an accident in Kansas City? GroverLawKC fights insurance companies who minimize spine injuries. Call (816) 533-3969.',
 		intro:
@@ -678,7 +711,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Paralysis',
 		title: 'Kansas City Paralysis Injury Lawyer',
 		category: 'injury',
-		icon: '♿',
+		icon: Accessibility,
 		metaDescription:
 			'Paralyzed due to someone\'s negligence in Kansas City? GroverLawKC pursues life-changing settlements for paralysis victims. Call (816) 533-3969.',
 		intro:
@@ -704,7 +737,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Nursing Home Abuse',
 		title: 'Kansas City Nursing Home Abuse Lawyer',
 		category: 'injury',
-		icon: '👴',
+		icon: Users,
 		metaDescription:
 			'Loved one abused or neglected in a Kansas City nursing home? GroverLawKC holds negligent facilities accountable. Free consultation — call (816) 533-3969.',
 		intro:
@@ -730,7 +763,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Negligent Security',
 		title: 'Kansas City Negligent Security Lawyer',
 		category: 'injury',
-		icon: '🔒',
+		icon: Shield,
 		metaDescription:
 			'Assaulted or injured due to inadequate security in Kansas City? GroverLawKC holds property owners accountable. Free consultation — call (816) 533-3969.',
 		intro:
@@ -756,7 +789,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Child Injuries',
 		title: 'Kansas City Child Injury Lawyer',
 		category: 'injury',
-		icon: '👦',
+		icon: Baby,
 		metaDescription:
 			'Was your child injured due to negligence in Kansas City? GroverLawKC fights for injured children and their families. Free consultation — call (816) 533-3969.',
 		intro:
@@ -782,7 +815,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Dog Bite',
 		title: 'Kansas City Dog Bite Lawyer',
 		category: 'injury',
-		icon: '🐕',
+		icon: Dog,
 		metaDescription:
 			'Dog bite injury in Kansas City or Overland Park? GroverLawKC fights for fair compensation. Free consultation — call (816) 533-3969.',
 		intro:
@@ -808,7 +841,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Product Liability',
 		title: 'Kansas City Product Liability Lawyer',
 		category: 'injury',
-		icon: '⚙️',
+		icon: ShieldCheck,
 		metaDescription:
 			'Injured by a defective product in Kansas City? GroverLawKC holds manufacturers accountable. Free consultation — call (816) 533-3969.',
 		intro:
@@ -834,7 +867,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Construction Accidents',
 		title: 'Kansas City Construction Accident Lawyer',
 		category: 'injury',
-		icon: '🏗️',
+		icon: HardHat,
 		metaDescription:
 			'Injured at a construction site in Kansas City? GroverLawKC fights for construction accident victims. Free consultation — call (816) 533-3969.',
 		intro:
@@ -860,7 +893,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Workplace Injuries',
 		title: 'Kansas City Workplace Injury Lawyer',
 		category: 'injury',
-		icon: '🏭',
+		icon: Factory,
 		metaDescription:
 			'Injured at work in Kansas City? GroverLawKC helps workers explore all compensation options beyond workers\' comp. Call (816) 533-3969.',
 		intro:
@@ -886,7 +919,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Sexual Assault',
 		title: 'Kansas City Sexual Assault Civil Claim Lawyer',
 		category: 'injury',
-		icon: '🛡️',
+		icon: Shield,
 		metaDescription:
 			'Pursuing civil justice after sexual assault in Kansas City? GroverLawKC provides compassionate, confidential representation. Call (816) 533-3969.',
 		intro:
@@ -916,7 +949,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Disability Claims',
 		title: 'Kansas City Disability Insurance Claim Lawyer',
 		category: 'insurance',
-		icon: '📋',
+		icon: ClipboardList,
 		metaDescription:
 			'Disability insurance claim denied in Kansas City? GroverLawKC fights for wrongfully denied benefits. Free consultation — call (816) 533-3969.',
 		intro:
@@ -942,7 +975,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Life Insurance Claims',
 		title: 'Kansas City Life Insurance Claim Lawyer',
 		category: 'insurance',
-		icon: '📄',
+		icon: FileText,
 		metaDescription:
 			'Life insurance claim denied in Kansas City? GroverLawKC fights wrongful denials. Free consultation — call (816) 533-3969.',
 		intro:
@@ -968,7 +1001,7 @@ export const practiceAreas: PracticeArea[] = [
 		menuTitle: 'Uninsured Motorist',
 		title: 'Kansas City Uninsured Motorist Claim Lawyer',
 		category: 'insurance',
-		icon: '🚫',
+		icon: Ban,
 		metaDescription:
 			'Hit by an uninsured driver in Kansas City? GroverLawKC helps you recover compensation through your own UM coverage. Call (816) 533-3969.',
 		intro:

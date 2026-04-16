@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Hero from '$lib/components/Hero.svelte';
 	import CTABanner from '$lib/components/CTABanner.svelte';
+	import { Check } from 'lucide-svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -41,7 +42,7 @@
 
 			<div class="post-footer">
 				<div class="author-box">
-					<div class="author-avatar">⚖️</div>
+					<div class="author-avatar">MG</div>
 					<div>
 						<p class="author-name">Mark Grover</p>
 						<p class="author-bio">
@@ -67,19 +68,19 @@
 			<div class="sidebar-promise">
 				<div class="promise-items">
 					<div class="promise-item">
-						<span class="pi-check">✓</span>
+						<span class="pi-check"><Check size={16} strokeWidth={2} color="#C99700" /></span>
 						<span>No fees unless we win</span>
 					</div>
 					<div class="promise-item">
-						<span class="pi-check">✓</span>
+						<span class="pi-check"><Check size={16} strokeWidth={2} color="#C99700" /></span>
 						<span>Available 24/7</span>
 					</div>
 					<div class="promise-item">
-						<span class="pi-check">✓</span>
+						<span class="pi-check"><Check size={16} strokeWidth={2} color="#C99700" /></span>
 						<span>Voted Best KC Injury Lawyer 2022–2025</span>
 					</div>
 					<div class="promise-item">
-						<span class="pi-check">✓</span>
+						<span class="pi-check"><Check size={16} strokeWidth={2} color="#C99700" /></span>
 						<span>20+ Years of experience</span>
 					</div>
 				</div>
@@ -216,15 +217,21 @@
 	}
 
 	.author-avatar {
-		width: 48px;
-		height: 48px;
+		width: 60px;
+		height: 60px;
 		border-radius: 50%;
-		background: var(--gold);
+		background: var(--navy-dark, #0b1a32);
+		border: 2px solid var(--gold, #C99700);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 1.4rem;
+		font-family: 'Cinzel', serif;
+		font-size: 22px;
+		font-weight: 600;
+		color: var(--gold, #C99700);
+		letter-spacing: 1px;
 		flex-shrink: 0;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 	}
 
 	.author-name {
@@ -315,8 +322,8 @@
 	}
 
 	.pi-check {
-		color: var(--gold);
-		font-weight: 700;
+		display: flex;
+		align-items: center;
 		flex-shrink: 0;
 	}
 

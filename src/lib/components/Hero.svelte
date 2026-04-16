@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { Phone, Check } from 'lucide-svelte';
+
 	interface Props {
 		title: string;
 		subtitle?: string;
@@ -21,26 +23,24 @@
 			{#if showCTA}
 				<div class="hero-ctas">
 					<a href="tel:8165333969" class="btn-cta btn-cta-primary">
-						<span class="btn-icon">📞</span>
+						<span class="btn-icon"><Phone size={20} strokeWidth={1.5} /></span>
 						Call Now Free
 					</a>
 					<a href="/contact" class="btn-cta btn-cta-outline">Free Consultation</a>
 				</div>
 				<div class="hero-trust">
-					<span>✓ No Fee Unless You Win</span>
-					<span>✓ Available 24/7</span>
-					<span>✓ Free Consultation</span>
+					<span><Check size={16} strokeWidth={2} color="#C99700" /> No Fee Unless You Win</span>
+					<span><Check size={16} strokeWidth={2} color="#C99700" /> Available 24/7</span>
+					<span><Check size={16} strokeWidth={2} color="#C99700" /> Free Consultation</span>
 				</div>
 			{/if}
 		</div>
 		{#if !compact}
 			<div class="hero-image-wrap">
 				<div class="hero-image-placeholder">
-					<div class="attorney-placeholder">
-						<div class="placeholder-icon">⚖️</div>
-						<p>Mark Grover</p>
-						<p class="placeholder-sub">Personal Injury Attorney</p>
-					</div>
+					<div class="attorney-monogram">MG</div>
+					<p class="attorney-name-label">Mark Grover</p>
+					<p class="placeholder-sub">Personal Injury Attorney</p>
 				</div>
 				<div class="hero-stats">
 					<div class="stat">
@@ -167,6 +167,11 @@
 		transition: all 0.3s ease;
 	}
 
+	.btn-icon {
+		display: flex;
+		align-items: center;
+	}
+
 	.btn-cta-primary {
 		background: var(--cta-gradient);
 		background-size: 100% 200%;
@@ -196,6 +201,9 @@
 	}
 
 	.hero-trust span {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
 		font-size: 0.8rem;
 		color: rgba(255, 255, 255, 0.7);
 		font-weight: 500;
@@ -217,31 +225,39 @@
 		border: 2px solid rgba(201, 151, 0, 0.3);
 		border-radius: 8px;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		gap: 0.8rem;
 	}
 
-	.attorney-placeholder {
-		text-align: center;
-		color: rgba(255, 255, 255, 0.5);
+	.attorney-monogram {
+		width: 180px;
+		height: 180px;
+		border-radius: 50%;
+		background: var(--navy-dark, #0b1a32);
+		border: 3px solid var(--gold, #C99700);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Cinzel', serif;
+		font-size: 72px;
+		font-weight: 600;
+		color: var(--gold, #C99700);
+		letter-spacing: 2px;
+		box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 	}
 
-	.placeholder-icon {
-		font-size: 4rem;
-		margin-bottom: 0.5rem;
-	}
-
-	.attorney-placeholder p {
+	.attorney-name-label {
 		font-family: var(--font-heading);
 		font-size: 1.2rem;
-		color: rgba(255, 255, 255, 0.7);
+		color: rgba(255, 255, 255, 0.85);
 	}
 
 	.placeholder-sub {
-		font-family: var(--font-primary) !important;
-		font-size: 0.8rem !important;
-		color: var(--gray) !important;
-		margin-top: 0.3rem;
+		font-family: var(--font-primary);
+		font-size: 0.8rem;
+		color: var(--gray);
 	}
 
 	.hero-stats {

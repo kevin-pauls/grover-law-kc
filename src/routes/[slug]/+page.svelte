@@ -4,6 +4,7 @@
 	import PracticeAreaCard from '$lib/components/PracticeAreaCard.svelte';
 	import ContactForm from '$lib/components/ContactForm.svelte';
 	import { practiceAreas, type PracticeArea } from '$lib/data/practice-areas';
+	import { Phone, Shield } from 'lucide-svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -66,18 +67,18 @@
 			<div class="sidebar-contact">
 				<h4>Call Us Now</h4>
 				<a href="tel:8165333969" class="sidebar-phone">
-					<span class="phone-icon">📞</span>
+					<span class="phone-icon"><Phone size={20} strokeWidth={1.5} /></span>
 					(816) 533-3969
 				</a>
 				<a href="tel:9134321000" class="sidebar-phone">
-					<span class="phone-icon">📞</span>
+					<span class="phone-icon"><Phone size={20} strokeWidth={1.5} /></span>
 					(913) 432-1000
 				</a>
 				<p class="available">Available 24 hours / 7 days</p>
 			</div>
 
 			<div class="sidebar-promise">
-				<div class="promise-icon">⚖️</div>
+				<div class="promise-icon"><Shield size={24} strokeWidth={1.5} color="#C99700" /></div>
 				<strong>No Fee Unless We Win</strong>
 				<p>You pay nothing until we recover compensation for you.</p>
 			</div>
@@ -253,7 +254,8 @@
 	}
 
 	.phone-icon {
-		font-size: 1rem;
+		display: flex;
+		align-items: center;
 	}
 
 	.available {
@@ -271,7 +273,9 @@
 	}
 
 	.promise-icon {
-		font-size: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		margin-bottom: 0.5rem;
 	}
 

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { Phone } from 'lucide-svelte';
+
 	interface Props {
 		text?: string;
 		phone?: string;
@@ -13,7 +15,7 @@
 <section class="cta-banner">
 	<div class="container cta-inner">
 		<div class="cta-text">
-			<span class="cta-icon">⚖️</span>
+			<span class="cta-icon"><Phone size={28} strokeWidth={1.5} /></span>
 			<p>{text}</p>
 		</div>
 		<div class="cta-actions">
@@ -46,7 +48,9 @@
 	}
 
 	.cta-icon {
-		font-size: 2rem;
+		display: flex;
+		align-items: center;
+		color: var(--dark);
 	}
 
 	.cta-text p {

@@ -3,6 +3,7 @@
 	import PracticeAreaCard from '$lib/components/PracticeAreaCard.svelte';
 	import CTABanner from '$lib/components/CTABanner.svelte';
 	import { vehicleAreas, injuryAreas, insuranceAreas } from '$lib/data/practice-areas';
+	import { Car, Scale, ClipboardList } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -25,7 +26,7 @@
 		<!-- Vehicle Accidents -->
 		<div class="category-section">
 			<div class="category-header">
-				<span class="category-icon">🚗</span>
+				<span class="category-icon"><Car size={32} strokeWidth={1.5} color="#C99700" /></span>
 				<div>
 					<h2>Vehicle & Transportation Accidents</h2>
 					<p>Injured in a vehicle accident? We fight for maximum compensation regardless of what type of crash occurred.</p>
@@ -46,7 +47,7 @@
 		<!-- Injury & Liability -->
 		<div class="category-section">
 			<div class="category-header">
-				<span class="category-icon">⚖️</span>
+				<span class="category-icon"><Scale size={32} strokeWidth={1.5} color="#C99700" /></span>
 				<div>
 					<h2>Personal Injury & Liability</h2>
 					<p>Hurt on someone else's property, by a defective product, or through another's negligence? We handle it all.</p>
@@ -67,7 +68,7 @@
 		<!-- Insurance & Claims -->
 		<div class="category-section">
 			<div class="category-header">
-				<span class="category-icon">📋</span>
+				<span class="category-icon"><ClipboardList size={32} strokeWidth={1.5} color="#C99700" /></span>
 				<div>
 					<h2>Insurance & Claims</h2>
 					<p>Insurance companies work against you. We fight to make sure you receive every benefit you're entitled to.</p>
@@ -114,7 +115,8 @@
 	}
 
 	.category-icon {
-		font-size: 2.5rem;
+		display: flex;
+		align-items: center;
 		flex-shrink: 0;
 	}
 

@@ -2,6 +2,7 @@
 	import Hero from '$lib/components/Hero.svelte';
 	import ContactForm from '$lib/components/ContactForm.svelte';
 	import CTABanner from '$lib/components/CTABanner.svelte';
+	import { Phone, MapPin, Clock, Check } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -32,7 +33,7 @@
 
 			<div class="info-cards">
 				<div class="info-card">
-					<div class="info-card-icon">📞</div>
+					<div class="info-card-icon"><Phone size={28} strokeWidth={1.5} color="#C99700" /></div>
 					<div class="info-card-content">
 						<h3>Kansas City</h3>
 						<a href="tel:8165333969">(816) 533-3969</a>
@@ -40,7 +41,7 @@
 				</div>
 
 				<div class="info-card">
-					<div class="info-card-icon">📞</div>
+					<div class="info-card-icon"><Phone size={28} strokeWidth={1.5} color="#C99700" /></div>
 					<div class="info-card-content">
 						<h3>Overland Park</h3>
 						<a href="tel:9134321000">(913) 432-1000</a>
@@ -48,7 +49,7 @@
 				</div>
 
 				<div class="info-card">
-					<div class="info-card-icon">📍</div>
+					<div class="info-card-icon"><MapPin size={28} strokeWidth={1.5} color="#C99700" /></div>
 					<div class="info-card-content">
 						<h3>Office Address</h3>
 						<p>7221 W 79th St, Ste 100</p>
@@ -57,7 +58,7 @@
 				</div>
 
 				<div class="info-card">
-					<div class="info-card-icon">⏰</div>
+					<div class="info-card-icon"><Clock size={28} strokeWidth={1.5} color="#C99700" /></div>
 					<div class="info-card-content">
 						<h3>Office Hours</h3>
 						<p>Monday – Friday: 8am – 6pm</p>
@@ -70,23 +71,23 @@
 				<h3>Our Promise To You</h3>
 				<div class="promise-list">
 					<div class="promise-item">
-						<span class="promise-check">✓</span>
+						<span class="promise-check"><Check size={16} strokeWidth={2} color="#C99700" /></span>
 						<p><strong>We respond within 24 hours</strong> — often much sooner</p>
 					</div>
 					<div class="promise-item">
-						<span class="promise-check">✓</span>
+						<span class="promise-check"><Check size={16} strokeWidth={2} color="#C99700" /></span>
 						<p><strong>No fee unless we win</strong> your case</p>
 					</div>
 					<div class="promise-item">
-						<span class="promise-check">✓</span>
+						<span class="promise-check"><Check size={16} strokeWidth={2} color="#C99700" /></span>
 						<p><strong>Your information is completely confidential</strong></p>
 					</div>
 					<div class="promise-item">
-						<span class="promise-check">✓</span>
+						<span class="promise-check"><Check size={16} strokeWidth={2} color="#C99700" /></span>
 						<p><strong>No pressure, no obligation</strong> — just honest advice</p>
 					</div>
 					<div class="promise-item">
-						<span class="promise-check">✓</span>
+						<span class="promise-check"><Check size={16} strokeWidth={2} color="#C99700" /></span>
 						<p><strong>We will come to you</strong> if you cannot come to us</p>
 					</div>
 				</div>
@@ -152,7 +153,8 @@
 	}
 
 	.info-card-icon {
-		font-size: 1.5rem;
+		display: flex;
+		align-items: center;
 		flex-shrink: 0;
 	}
 
@@ -211,9 +213,8 @@
 	}
 
 	.promise-check {
-		color: var(--gold-light);
-		font-size: 1rem;
-		font-weight: 700;
+		display: flex;
+		align-items: center;
 		flex-shrink: 0;
 		margin-top: 0.1rem;
 	}

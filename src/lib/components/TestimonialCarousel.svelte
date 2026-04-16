@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { User } from 'lucide-svelte';
+
 	interface Testimonial {
 		name: string;
 		stars: number;
@@ -87,7 +89,7 @@
 						<blockquote class="testimonial-text">"{testimonial.text}"</blockquote>
 						<div class="testimonial-footer">
 							<div class="reviewer">
-								<span class="reviewer-icon">👤</span>
+								<span class="reviewer-icon"><User size={24} strokeWidth={1.5} color="#C99700" /></span>
 								<div>
 									<p class="reviewer-name">{testimonial.name}</p>
 									<p class="reviewer-date">{testimonial.date}</p>
@@ -262,7 +264,9 @@
 	}
 
 	.reviewer-icon {
-		font-size: 1.5rem;
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
 	}
 
 	.reviewer-name {
