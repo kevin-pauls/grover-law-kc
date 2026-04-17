@@ -14,6 +14,7 @@
 	const navLinks = [
 		{ href: '/', label: 'Home' },
 		{ href: '/practice-areas', label: 'Practice Areas' },
+		{ href: '/locations', label: 'Locations' },
 		{ href: '/blog', label: 'Blog' },
 		{ href: '/contact', label: 'Contact' }
 	];
