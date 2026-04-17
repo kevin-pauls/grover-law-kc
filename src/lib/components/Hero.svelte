@@ -24,7 +24,7 @@
 				<div class="hero-ctas">
 					<a href="tel:8165333969" class="btn-cta btn-cta-primary">
 						<span class="btn-icon"><Phone size={20} strokeWidth={1.5} /></span>
-						Call Now Free
+						Call Now
 					</a>
 					<a href="/contact" class="btn-cta btn-cta-outline">Free Consultation</a>
 				</div>
