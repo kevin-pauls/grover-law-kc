@@ -15,10 +15,22 @@
 	const quickLinks = [
 		{ href: '/', label: 'Home' },
 		{ href: '/practice-areas', label: 'Practice Areas' },
+		{ href: '/locations', label: 'Locations' },
 		{ href: '/blog', label: 'Blog' },
 		{ href: '/contact', label: 'Contact' },
 		{ href: '/privacy-policy', label: 'Privacy Policy' },
 		{ href: '/disclaimer', label: 'Disclaimer' }
+	];
+
+	const serviceAreas = [
+		{ href: '/locations/kansas-city', label: 'Kansas City, MO' },
+		{ href: '/locations/overland-park', label: 'Overland Park, KS' },
+		{ href: '/locations/olathe', label: 'Olathe, KS' },
+		{ href: '/locations/lenexa', label: 'Lenexa, KS' },
+		{ href: '/locations/leawood', label: 'Leawood, KS' },
+		{ href: '/locations/shawnee', label: 'Shawnee, KS' },
+		{ href: '/locations/independence', label: 'Independence, MO' },
+		{ href: '/locations/blue-springs', label: 'Blue Springs, MO' }
 	];
 
 	const year = new Date().getFullYear();
@@ -60,7 +72,17 @@
 				</ul>
 			</div>
 
-			<!-- Col 3: Quick Links -->
+			<!-- Col 3: Service Areas -->
+			<div class="footer-col">
+				<h3 class="footer-heading">Service Areas</h3>
+				<ul class="footer-links">
+					{#each serviceAreas as link}
+						<li><a href={link.href}>{link.label}</a></li>
+					{/each}
+				</ul>
+			</div>
+
+			<!-- Col 4: Quick Links -->
 			<div class="footer-col">
 				<h3 class="footer-heading">Quick Links</h3>
 				<ul class="footer-links">
@@ -101,7 +123,7 @@
 
 	.footer-grid {
 		display: grid;
-		grid-template-columns: 1.4fr 1fr 1fr;
+		grid-template-columns: 1.4fr 1fr 1fr 1fr;
 		gap: 3rem;
 	}
 
