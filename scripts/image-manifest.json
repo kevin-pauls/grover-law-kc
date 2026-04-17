@@ -1,0 +1,414 @@
+{
+  "attorney": [
+    {
+      "filename": "groverlawkc-logo.svg",
+      "sizeBytes": 24352,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/groverlawkc-logo.svg"
+    },
+    {
+      "filename": "mark-grover-home-banner.webp",
+      "sizeBytes": 162770,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/mark-grover-home-banner.webp"
+    },
+    {
+      "filename": "arrow-left-gold.svg",
+      "sizeBytes": 860,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/arrow-left-gold.svg"
+    },
+    {
+      "filename": "arrow-right-gold.svg",
+      "sizeBytes": 854,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/arrow-right-gold.svg"
+    },
+    {
+      "filename": "best-of-kc-25-winner.jpg",
+      "sizeBytes": 42157,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/best-of-kc-25-winner.jpg"
+    },
+    {
+      "filename": "best-of-kc-24.webp",
+      "sizeBytes": 35914,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/best-of-kc-24.webp"
+    },
+    {
+      "filename": "best-of-kc-23-1.webp",
+      "sizeBytes": 14126,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/best-of-kc-23-1.webp"
+    },
+    {
+      "filename": "best-of-kc-22.webp",
+      "sizeBytes": 11240,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/best-of-kc-22.webp"
+    },
+    {
+      "filename": "meet-team-mark.webp",
+      "sizeBytes": 78024,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/meet-team-mark.webp"
+    },
+    {
+      "filename": "ks-shawnee-car-accident-lawyers-2026.png",
+      "sizeBytes": 4676,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/ks_shawnee_car-accident-lawyers_2026.png"
+    },
+    {
+      "filename": "award19.webp",
+      "sizeBytes": 11174,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award19.webp"
+    },
+    {
+      "filename": "naopia-badge-2025.png",
+      "sizeBytes": 26283,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/NAOPIA-Badge-2025-300x242.png"
+    },
+    {
+      "filename": "award1.webp",
+      "sizeBytes": 6070,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award1.webp"
+    },
+    {
+      "filename": "award2.webp",
+      "sizeBytes": 5124,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award2.webp"
+    },
+    {
+      "filename": "award3.webp",
+      "sizeBytes": 6476,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award3.webp"
+    },
+    {
+      "filename": "award5.webp",
+      "sizeBytes": 12936,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award5.webp"
+    },
+    {
+      "filename": "award4-1.webp",
+      "sizeBytes": 7474,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award4-1.webp"
+    },
+    {
+      "filename": "award6.webp",
+      "sizeBytes": 9668,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award6.webp"
+    },
+    {
+      "filename": "award7.webp",
+      "sizeBytes": 8616,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award7.webp"
+    },
+    {
+      "filename": "award9-2.webp",
+      "sizeBytes": 15734,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award9-2.webp"
+    },
+    {
+      "filename": "award9-1.webp",
+      "sizeBytes": 5732,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award9-1.webp"
+    },
+    {
+      "filename": "award10-1.webp",
+      "sizeBytes": 3660,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award10-1.webp"
+    },
+    {
+      "filename": "award11.webp",
+      "sizeBytes": 9888,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award11.webp"
+    },
+    {
+      "filename": "award12.webp",
+      "sizeBytes": 5578,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award12.webp"
+    },
+    {
+      "filename": "award13.webp",
+      "sizeBytes": 9392,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award13.webp"
+    },
+    {
+      "filename": "award14.webp",
+      "sizeBytes": 10284,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award14.webp"
+    },
+    {
+      "filename": "award15.webp",
+      "sizeBytes": 7692,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award15.webp"
+    },
+    {
+      "filename": "award16.webp",
+      "sizeBytes": 6386,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award16.webp"
+    },
+    {
+      "filename": "award17.webp",
+      "sizeBytes": 8026,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award17.webp"
+    },
+    {
+      "filename": "award24.webp",
+      "sizeBytes": 9352,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/award24.webp"
+    },
+    {
+      "filename": "grover-law-team.jpg",
+      "sizeBytes": 194175,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Grover-Law-team.jpg"
+    },
+    {
+      "filename": "catastrophic-car-accident2-1.webp",
+      "sizeBytes": 137956,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/catastrophic-car-accident2-1.webp"
+    },
+    {
+      "filename": "brain-injury4.webp",
+      "sizeBytes": 58608,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/brain-injury4.webp"
+    },
+    {
+      "filename": "featured-img-kansas-city-car-accident-attorney.webp",
+      "sizeBytes": 59020,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/featured-img-kansas-city-car-accident-attorney.webp"
+    },
+    {
+      "filename": "kansas-city-boating-accident-attorney.webp",
+      "sizeBytes": 152508,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Kansas-City-Boating-Accident-Attorney.webp"
+    },
+    {
+      "filename": "catastrophic-injury8.webp",
+      "sizeBytes": 52030,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/catastrophic-injury8.webp"
+    },
+    {
+      "filename": "mass-transit-accident1.webp",
+      "sizeBytes": 187588,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/mass-transit-accident1.webp"
+    },
+    {
+      "filename": "premises-liability7.webp",
+      "sizeBytes": 107344,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/premises-liability7.webp"
+    },
+    {
+      "filename": "kansas-city-slip-and-fall-attorney.webp",
+      "sizeBytes": 67714,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Kansas-City-Slip-and-Fall-Attorney.webp"
+    },
+    {
+      "filename": "truck-accident1.webp",
+      "sizeBytes": 115942,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/truck-accident1.webp"
+    },
+    {
+      "filename": "winter-driving-accident9.webp",
+      "sizeBytes": 161200,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/winter-driving-accident9.webp"
+    },
+    {
+      "filename": "medical-malpractice1.webp",
+      "sizeBytes": 83376,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/medical-malpractice1.webp"
+    },
+    {
+      "filename": "motorcycle-accident9.webp",
+      "sizeBytes": 133238,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/motorcycle-accident9.webp"
+    },
+    {
+      "filename": "personal-injury9.webp",
+      "sizeBytes": 71344,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/personal-injury9.webp"
+    },
+    {
+      "filename": "wrongful-death10.webp",
+      "sizeBytes": 71358,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/wrongful-death10.webp"
+    },
+    {
+      "filename": "herniated-disc-injury.webp",
+      "sizeBytes": 382676,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/herniated-disc-injury.webp"
+    },
+    {
+      "filename": "pedestrian-pccident.webp",
+      "sizeBytes": 387860,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/pedestrian-pccident.webp"
+    },
+    {
+      "filename": "doctor-disability-claims.webp",
+      "sizeBytes": 279496,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Doctor-Disability-Claims.webp"
+    },
+    {
+      "filename": "life-insurance-appeal.webp",
+      "sizeBytes": 298778,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Life-Insurance-Appeal.webp"
+    },
+    {
+      "filename": "paralysis-injury.webp",
+      "sizeBytes": 255382,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Paralysis-Injury.webp"
+    },
+    {
+      "filename": "burn-injury.webp",
+      "sizeBytes": 292890,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Burn-Injury.webp"
+    },
+    {
+      "filename": "overloaded-cargo-truck-accident.webp",
+      "sizeBytes": 509878,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Overloaded-Cargo-Truck-Accident.webp"
+    },
+    {
+      "filename": "fatal-motorcycle-accident.webp",
+      "sizeBytes": 380542,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Fatal-Motorcycle-Accident.webp"
+    },
+    {
+      "filename": "spinal-cord-injury.webp",
+      "sizeBytes": 267706,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Spinal-Cord-Injury.webp"
+    },
+    {
+      "filename": "child-injury.webp",
+      "sizeBytes": 234640,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Child-Injury.webp"
+    },
+    {
+      "filename": "maintenance-failure-accident.webp",
+      "sizeBytes": 512700,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Maintenance-Failure-Accident.webp"
+    },
+    {
+      "filename": "rear-end-accident.webp",
+      "sizeBytes": 387022,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Rear-End-Accident.webp"
+    },
+    {
+      "filename": "fatal-truck-accident.webp",
+      "sizeBytes": 343100,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Fatal-Truck-Accident.webp"
+    },
+    {
+      "filename": "broken-bones-injury.webp",
+      "sizeBytes": 79154,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Broken-Bones-Injury.webp"
+    },
+    {
+      "filename": "bedsore.webp",
+      "sizeBytes": 37174,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Bedsore.webp"
+    },
+    {
+      "filename": "nursing-home-abuse.webp",
+      "sizeBytes": 271556,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Nursing-Home-Abuse.webp"
+    },
+    {
+      "filename": "distracted-driving.webp",
+      "sizeBytes": 339154,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Distracted-Driving.webp"
+    },
+    {
+      "filename": "head-on-collision.webp",
+      "sizeBytes": 384428,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Head-On-Collision.webp"
+    },
+    {
+      "filename": "negligent-security.webp",
+      "sizeBytes": 294646,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Negligent-Security.webp"
+    },
+    {
+      "filename": "hit-and-run-accident.webp",
+      "sizeBytes": 374234,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Hit-and-Run-Accident.webp"
+    },
+    {
+      "filename": "new-project.webp",
+      "sizeBytes": 430668,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/New-Project.webp"
+    },
+    {
+      "filename": "amtrak-train-accident.webp",
+      "sizeBytes": 436534,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Amtrak-Train-Accident.webp"
+    },
+    {
+      "filename": "scooter-accident.webp",
+      "sizeBytes": 413512,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Scooter-Accident.webp"
+    },
+    {
+      "filename": "lyft-or-uber-accident.webp",
+      "sizeBytes": 280394,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Lyft-or-Uber-Accident.webp"
+    },
+    {
+      "filename": "new-project-1.webp",
+      "sizeBytes": 449268,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/New-Project-1.webp"
+    },
+    {
+      "filename": "swimming-pool-accident.webp",
+      "sizeBytes": 398898,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Swimming-Pool-Accident.webp"
+    },
+    {
+      "filename": "nursing-home-malnutrition-dehydration.webp",
+      "sizeBytes": 310718,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Nursing-Home-Malnutrition-Dehydration.webp"
+    },
+    {
+      "filename": "nursing-home-brain-injury.webp",
+      "sizeBytes": 364932,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Nursing-Home-Brain-Injury.webp"
+    },
+    {
+      "filename": "rear-end-accident-1.webp",
+      "sizeBytes": 387022,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Rear-End-Accident-1.webp"
+    },
+    {
+      "filename": "high-speed-accident.webp",
+      "sizeBytes": 294760,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/High-Speed-Accident.webp"
+    },
+    {
+      "filename": "kansas-city-golf-cart-accident.webp",
+      "sizeBytes": 349508,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/kansas-city-golf-cart-accident.webp"
+    },
+    {
+      "filename": "interstates-accident.webp",
+      "sizeBytes": 323840,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Interstates-Accident.webp"
+    },
+    {
+      "filename": "new-project-2.webp",
+      "sizeBytes": 362674,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/New-Project-2.webp"
+    },
+    {
+      "filename": "uninsured-driver-accident.webp",
+      "sizeBytes": 393468,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Uninsured-Driver-Accident.webp"
+    },
+    {
+      "filename": "lane-splitting-accident.webp",
+      "sizeBytes": 295914,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Lane-Splitting-Accident.webp"
+    },
+    {
+      "filename": "reckless-driving-accident.webp",
+      "sizeBytes": 456234,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/Reckless-Driving-Accident.webp"
+    },
+    {
+      "filename": "i-70-car-acciden-missouri-kansast-.webp",
+      "sizeBytes": 675672,
+      "sourceUrl": "https://groverlawkc.com/wp-content/uploads/I-70-Car-Acciden-MIssouri-Kansast-.webp"
+    }
+  ]
+}

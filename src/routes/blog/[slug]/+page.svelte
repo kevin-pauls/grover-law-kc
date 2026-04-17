@@ -42,7 +42,7 @@
 
 			<div class="post-footer">
 				<div class="author-box">
-					<div class="author-avatar">MG</div>
+					<img class="author-avatar" src="/images/attorney/meet-team-mark.webp" alt="Mark Grover" width="60" height="60" loading="lazy" />
 					<div>
 						<p class="author-name">Mark Grover</p>
 						<p class="author-bio">
@@ -220,13 +220,8 @@
 		width: 60px;
 		height: 60px;
 		border-radius: 50%;
-		background: var(--navy-dark, #0b1a32);
 		border: 2px solid var(--gold, #C99700);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-family: 'Cinzel', serif;
-		font-size: 22px;
+		object-fit: cover;
 		font-weight: 600;
 		color: var(--gold, #C99700);
 		letter-spacing: 1px;

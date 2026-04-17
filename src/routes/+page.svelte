@@ -114,11 +114,8 @@
 <section class="bio-section">
 	<div class="container bio-grid">
 		<div class="bio-image-col">
-			<div class="bio-image-placeholder">
-				<div class="attorney-monogram">MG</div>
-				<p class="attorney-name">Mark Grover</p>
-				<p class="attorney-title">Personal Injury Attorney</p>
-				<p class="attorney-location">Kansas City, Missouri</p>
+			<div class="bio-image-frame">
+				<img src="/images/attorney/meet-team-mark.webp" alt="Mark Grover, Kansas City Personal Injury Attorney" width="400" height="500" loading="lazy" />
 			</div>
 			<div class="bio-credentials">
 				<div class="credential">
@@ -349,56 +346,21 @@
 		align-items: start;
 	}
 
-	.bio-image-placeholder {
-		background: var(--light-gray);
+	.bio-image-frame {
 		border-radius: var(--card-radius);
-		padding: 3rem 2rem;
-		text-align: center;
+		overflow: hidden;
 		border: 2px solid rgba(201, 151, 0, 0.2);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0.5rem;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 	}
 
-	.attorney-monogram {
-		width: 160px;
-		height: 160px;
-		border-radius: 50%;
-		background: var(--navy-dark, #0b1a32);
-		border: 3px solid var(--gold, #C99700);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-family: 'Cinzel', serif;
-		font-size: 64px;
-		font-weight: 600;
-		color: var(--gold, #C99700);
-		letter-spacing: 2px;
-		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-		margin-bottom: 0.5rem;
+	.bio-image-frame img {
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
 	}
 
-	.attorney-name {
-		font-family: var(--font-heading);
-		font-size: 1.4rem;
-		color: var(--dark);
-		margin-bottom: 0.2rem;
-	}
-
-	.attorney-title {
-		color: var(--gold);
-		font-weight: 600;
-		font-size: 0.9rem;
-		margin-bottom: 0.2rem;
-	}
-
-	.attorney-location {
-		color: var(--gray);
-		font-size: 0.85rem;
-	}
-
-	.bio-credentials {
+.bio-credentials {
 		margin-top: 1.5rem;
 		display: flex;
 		flex-direction: column;

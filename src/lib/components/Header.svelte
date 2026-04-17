@@ -38,8 +38,11 @@
 	<nav class="main-nav" class:scrolled={false}>
 		<div class="container nav-inner">
 			<a href="/" class="logo" onclick={closeMobile}>
-				<span class="logo-text">GroverLaw<span class="logo-kc">KC</span></span>
-				<span class="logo-tag">Injury & Accident Lawyers</span>
+				<img src="/images/logo/groverlawkc-logo.svg" alt="GroverLawKC — Injury & Accident Lawyers" class="logo-img" />
+				<span class="logo-fallback">
+					<span class="logo-text">GroverLaw<span class="logo-kc">KC</span></span>
+					<span class="logo-tag">Injury & Accident Lawyers</span>
+				</span>
 			</a>
 
 			<ul class="nav-links" class:open={mobileOpen}>
@@ -138,6 +141,15 @@
 		flex-direction: column;
 		text-decoration: none;
 		flex-shrink: 0;
+	}
+
+	.logo-img {
+		height: 50px;
+		width: auto;
+	}
+
+	.logo-fallback {
+		display: none;
 	}
 
 	.logo-text {

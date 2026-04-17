@@ -37,10 +37,8 @@
 		</div>
 		{#if !compact}
 			<div class="hero-image-wrap">
-				<div class="hero-image-placeholder">
-					<div class="attorney-monogram">MG</div>
-					<p class="attorney-name-label">Mark Grover</p>
-					<p class="placeholder-sub">Personal Injury Attorney</p>
+				<div class="hero-image-frame">
+					<img src="/images/attorney/mark-grover-home-banner.webp" alt="Mark Grover, Kansas City Personal Injury Attorney" width="400" height="533" loading="eager" />
 				</div>
 				<div class="hero-stats">
 					<div class="stat">
@@ -217,47 +215,20 @@
 		gap: 1.5rem;
 	}
 
-	.hero-image-placeholder {
+	.hero-image-frame {
 		width: 100%;
 		max-width: 400px;
-		aspect-ratio: 3/4;
-		background: rgba(255, 255, 255, 0.05);
-		border: 2px solid rgba(201, 151, 0, 0.3);
 		border-radius: 8px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 0.8rem;
-	}
-
-	.attorney-monogram {
-		width: 180px;
-		height: 180px;
-		border-radius: 50%;
-		background: var(--navy-dark, #0b1a32);
-		border: 3px solid var(--gold, #C99700);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-family: 'Cinzel', serif;
-		font-size: 72px;
-		font-weight: 600;
-		color: var(--gold, #C99700);
-		letter-spacing: 2px;
+		overflow: hidden;
+		border: 2px solid rgba(201, 151, 0, 0.3);
 		box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 	}
 
-	.attorney-name-label {
-		font-family: var(--font-heading);
-		font-size: 1.2rem;
-		color: rgba(255, 255, 255, 0.85);
-	}
-
-	.placeholder-sub {
-		font-family: var(--font-primary);
-		font-size: 0.8rem;
-		color: var(--gray);
+	.hero-image-frame img {
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
 	}
 
 	.hero-stats {
